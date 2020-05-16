@@ -2,8 +2,6 @@
 
 ### A blurred CSS theme for Thunderbird
 
-![screenshot](images/inbox.png)
-
 | Inbox |
 | --- |
 | ![screenshot](images/inbox.png) |
