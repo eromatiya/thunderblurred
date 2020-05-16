@@ -31,11 +31,20 @@ If you're using Plasma and there's no blur effect,
 
 1. Enable the blur in your compositor. Go to `System Settings > Desktop Effects > Enable Blur`. Note that this will not enable the blur effect on all applications.
 
-2. Enable the blur effect on all applications by installing a KWin script called [Force Blur](https://store.kde.org/p/1294604/)
+2. Enable the blur effect on all applications by installing a KWin script called [Force Blur](https://store.kde.org/p/1294604/).
 
 3. Go to `System Settings > KWin Scripts > Enable Force Blur`.
 
 4. Finally, change the Thunderbird theme from default to dark. **This is important!**
 
 
-It's been a while since I dwell with CSS so the theme is **kinda** messy right now. I'll clean this up from time to time, tho.
+
+
+
+TODO:
++ Add transparency on event and task window
++ Clean the CSS theme
++ Create a different CSS file for each window and panes to make it cleaner
+
+
+It's been a while since I dwell with CSS so the theme is **kinda** messy right now. I'll clean this up from time to time, tho. Contributions are welcome!
