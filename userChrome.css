@@ -1,0 +1,1464 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+:root {
+	--tb-base-bg: #00000039;
+	--tb-base-fg: #ffffff;
+	--tb-base-hover: #00000068;
+	--tb-base-active: #00000068;
+	--tb-accent-bg: #6498EFEE;
+	--tb-secondary-bg: #252525;
+	--tb-radius: 6px;
+}
+
+/* Make all these elements transparent */
+
+/* Inbox */
+#messengerWindow,
+#messengerBox, 
+#messengerBox #folderPaneBox, 
+#messengerBox #folderTree, 
+#tabmail-container #tabmail #tabmail-tabbox 
+#tabpanelcontainer #mailContent #mail-toolbox,
+#threadTree,
+#messengerBox #messagesBox #quick-filter-bar,
+.tab-background[selected=true],
+#status-bar,
+tooltip, #messengerBox splitter {
+	background: transparent !important;
+	border: none !important;
+}
+
+/* Menu Bar */
+
+menubar > menu {
+	color: var(--tb-base-fg) !important;
+}
+
+menubar {
+	background-color: transparent !important;
+}
+
+
+.treecol-image {
+	border: none !important;
+	background: var(--tb-base-bg) !important;
+}
+
+/* Set theme here */
+
+
+/* Textbox */
+textbox {
+	background: var(--tb-base-bg) !important;
+	border: none !important;
+	border-radius: var(--tb-radius) !important;
+	padding: 5px !important;
+	margin: 5px 5px !important;
+}
+
+
+/* Context Menu */
+
+menupopup {
+	background-color: var(--tb-base-bg) !important;
+	color: var(--tb-base-fg) !important;
+	box-shadow: none !important;
+	border: none !important;
+	border-radius: 4px !important;
+	padding: 4px 0 !important;
+}
+
+
+/* Box Panels Contents */
+
+box.panel-arrowcontent {
+	border-radius: var(--tb-radius) !important;
+	border: none !important;
+}
+
+box.panel-arrowbox {
+	display: none;
+}
+
+
+/* Tooltip */
+tooltip {
+	border: none !important;
+	background: var(--tb-base-bg) !important;
+	color: var(--tb-base-fg) !important;
+	border-radius: var(--tb-radius) !important;
+	padding: 4px !important;
+}
+
+/* Toolbox */
+
+#tabmail-container #tabmail #tabmail-tabbox 
+#tabpanelcontainer #mailContent #mail-toolbox {
+	background-color: var(--tb-base-bg) !important;
+}
+
+/* Buttons */
+#button-getmsg, 
+#button-newmsg,
+#button-chat, 
+#button-address, 
+#button-tag,
+#qfb-show-filter-bar {
+	background-color: var(--tb-base-bg) !important;
+	border-radius: var(--tb-radius) !important;
+}
+
+toolbarseparator {
+	visibility: hidden !important;
+}
+
+/* Tabs */
+
+.tabmail-tab::after,
+.tabmail-tab::before {
+	/*   border: none !important; */
+	/*   border-left: none !important; */
+}
+
+tab.tabmail-tab {
+	overflow: hidden;
+}
+
+.tabmail-arrowscrollbox:first-letter  {
+	margin-inline-start: 4px !important;
+	margin-inline-end: 4px !important;
+}
+
+.tab-button {
+	-moz-appearance: none !important;
+	-moz-image-region: rect(0, 16px, 16px, 0) !important;
+	border: none !important;
+	padding: -1px !important;
+	list-style-image: url("assets/close.svg")!important;
+}
+
+.tabmail-tab:hover > .tab-stack > .tab-background:not([selected=true]) {
+	background: var(--tb-base-hover) !important;
+}
+
+.tab-content {
+	background: transparent !important;
+	border-radius: var(--tb-radius) !important;
+}
+
+.tabmail-tab {
+	border-width: 0;
+	height: 32px !important;
+	margin-inline-end: 4px !important;
+	margin-top: 4px !important;
+	margin-bottom: 4px !important;
+	max-height: 32px !important;
+	min-height: 32px !important;
+	margin-left: 4px !important;
+	margin-right: 4px !important;
+}
+
+.tabmail-tab:hover > .tab-stack > .tab-content > .tab-text {
+	-moz-appearance: none !important;
+	color: var(--tb-base-fg) !important;
+	text-shadow: none !important;
+}
+
+.tab-background {
+	border-radius: var(--tb-radius) !important;
+}
+
+.tab-background[selected=true] {
+	border-radius: var(--tb-radius) !important;
+	background: var(--tb-base-bg) !important;
+	border: none !important;
+}
+
+.tab-close-button[selected="true"],
+.tab-close-button:hover:active,
+.tab-close-button:hover:active[selected="true"] {
+	-moz-image-region: rect(0, 48px, 16px, 32px);
+	margin-top: -1px;
+}
+
+.tab-close-button:focus {
+	outline: none !important;
+}
+
+.tab-text {
+	font-weight: normal !important;;
+	font-size: 11pt !important;
+	color: var(--tb-base-fg);
+}
+
+.tab-label-container:not([textoverflow]) {
+	display: flex;
+	overflow: hidden;
+	justify-content: center;
+	width: 50% !important;
+	max-width: 50% !important;
+	min-width: 50% !important;
+}
+
+.tab-line {
+	display: none !important;
+}
+
+#tabs-toolbar {
+	background: var(--tb-base-bg) !important;
+	padding: none !important;
+	margin: none !important;
+	border: none !important;
+}
+
+
+/* Set Inbox Theme here */
+
+
+#messengerWindow,
+#status-bar {
+	background: var(--tb-base-bg) !important;
+	border: none !important;
+}
+
+/* Folder Tree */
+
+#messengerBox #folderTree {
+	background: var(--tb-base-bg) !important;
+}
+
+#folderTree > treechildren::-moz-tree-row {
+	height: 24px !important;
+	min-height: 24px !important;
+}
+
+#folderTree > treechildren::-moz-tree-row(odd) {
+	background-color: transparent !important;
+	border: none !important;
+}
+
+#folderTree > treechildren::-moz-tree-row(selected) {
+	background-color: var(--tb-base-bg) !important;
+	border: none !important;
+}
+
+#folderTree > treechildren::-moz-tree-row(hover) {
+	background-color: var(--tb-accent-bg) !important;
+}
+
+#folderTree > treechildren::-moz-tree-line {
+	visibility: none !important;
+}
+
+#folderTree > treechildren::-moz-tree-cell-text {
+	color: var(--tb-base-fg) !important;
+	font-size: 11pt !important;
+	font-weight: normal !important;
+}
+
+#folderTree > treechildren::-moz-tree-cell {
+	padding: 0 8px !important;
+}
+
+
+
+/* Thread tree */
+
+#threadCols {
+	background: transparent !important;
+}
+
+#threadTree > treechildren::-moz-tree-cell-text(subjectCol) {
+	-moz-margin-start: -3px !important; 
+	-moz-margin-end: 5px !important;
+	color: var(--tb-base-fg) !important;
+}
+
+#threadTree treechildren::-moz-tree-row(odd) {
+	background-color: var(--tb-base-bg) !important;
+}
+
+
+#threadTree treechildren::-moz-tree-row(odd, selected) {
+	background-color: var(--tb-accent-bg) !important;
+}
+
+#threadTree treechildren::-moz-tree-row {
+	height: 32px !important;
+	max-height: 32x !important;
+	padding-top: 0px !important;
+	margin: 0 !important;
+	/* 	color: blue !important; */
+}
+
+#threadTree treechildren {
+	font-size: 11pt !important;
+}
+
+/* Thread Column */
+
+#threadTree treecol {
+	-moz-appearance: none !important;
+	height: 32px !important;
+	color: var(--tb-base-fg) !important;
+	background-color: var(--tb-base-bg) !important;
+	border: none !important;
+}
+
+/* Splitter */
+
+/* #messengerBox splitter {
+	-moz-appearance: none !important;
+	width: 5px !important;
+	min-width: 5px !important;
+	background: var(--tb-base-bg) !important;
+	padding: -1px -10px  !important;
+}
+*/
+
+/* No chat's splitter */
+#messengerBox splitter,
+#folderpane_splitter,
+#threadpane-splitter:not([orient="vertical"]),
+#today-splitter,
+#calsidebar_splitter {
+	-moz-appearance: none !important;
+	width: 5px !important;
+	min-width: 5px !important;
+	background: var(--tb-base-bg) !important;
+	padding: -1px -10px  !important;
+}
+
+#threadpane-splitter:hover,
+#attachment-splitter:hover,
+#calendar-view-splitter:hover {
+	background: var(--tb-base-bg) no-repeat center!important;
+}
+
+/* Message Box */
+
+#messagepanebox label {
+	color: var(--tb-base-fg) !important;
+}
+
+#msgHeaderView {
+	background-color: var(--tb-base-bg) !important;
+}
+
+#expandedtagsRow { 
+	display: none !important;
+}
+
+#messagepane {
+	margin: 0px 0px !important;
+	border: none !important;
+	padding: 10px 10px !important;
+	background-color: var(--tb-base-bg) !important;
+	box-shadow: none !important;;
+}
+
+#messagesBox {
+	background:  var(--tb-base-bg) !important;
+}
+/* Account Central */
+
+#acctCentralGrid {
+	-moz-appearance: none !important;
+	bacgkround-image: none !important;
+	background-color: transparent !important;
+}
+
+
+
+.toolbarbutton-1.msgHeaderView-button {
+	background: var(--tb-base-bg) !important;
+	border-radius: var(--tb-radius) !important;
+	border: none !important;
+	transition: none !important;
+}
+
+.toolbarbutton-1.hdrReplyButton {
+	border-radius: var(--tb-radius) !important;
+	background: var(--tb-base-bg) !important;
+}
+
+.toolbarbutton-1.msgHeaderView-button:hover {
+	border-style: solid !important;
+	border-width: 1px !important;
+}
+
+toolbarbutton {
+	background: transparent !important;
+	border-top-left-radius: 6px !important;
+	border-bottom-left-radius: 6px !important;
+	border: none !important;
+}
+
+.toolbarbutton-menubutton-dropmarker {
+	background: transparent !important;
+	border-top-right-radius: 6px !important;
+	border-bottom-right-radius: 6px !important;
+	border: none !important;
+}
+
+
+/* CHAT */
+
+#chatPanel {
+	background-color: transparent !important;
+}
+
+#chatPanel #listPaneBox {
+	-moz-appearance: none !important;
+	border: none !important;
+	background-color: var(--tb-base-bg) !important;
+}
+
+#chat-notification-top #conversationsDeck #noConvScreen {
+	-moz-appearance: none !important;
+	background-color: transparent !important;
+}
+
+#chat-notification-top #conversationsDeck #noAccountTitle {
+	color: var(--tb-base-fg) !important;
+	font-weight: normal !important;
+}
+
+#chat-notification-top #conversationsDeck #noAccountInnerBox {
+	color: var(--tb-base-fg) !important;
+	font-size: 14pt !important;
+	font-weight: normal !important;
+}
+
+#openIMAccountWizardButton {
+	font-size: 14pt !important;
+	border: none !important;
+	border-radius: var(--tb-radius) !important;
+	background: var(--tb-base-bg) !important;_
+}
+
+#openIMAccountWizardButton:hover {
+	background: var(--tb-base-hover) !important;
+}
+
+#openIMAccountWizardButton:active {
+	background: var(--tb--base-active) !important;
+}
+
+#openIMAccountWizardButton label {
+	font-size: 14pt !important;
+	font-weight: normal !important;
+	color: var(--tb-base-fg) !important;
+}
+
+#chatTabPanel > toolbox {
+	-moz-appearance: none !important;
+	background-color: var(--tb-base-bg) !important;
+}
+
+#chatTabPanel {
+	font-weight: normal !important;
+	font-size: 11pt !important;
+}
+
+#chatPanel #listSplitter {
+	-moz-appearance: none !important;
+	color: var(--tb-base-fg) !important;
+	font-weight: normal !important;
+	background-color: var(--tb-base-bg) !important;
+}
+
+#statusMessageInput {
+	-moz-appearance: none !important;
+	background: var(--tb-base-bg) !important;
+}
+
+#statusMessage {
+	background: transparent !important;
+	border-radius: var(--tb-radius) !important;
+}
+
+#statusMessage:hover {
+	background: var(--tb-base-bg) !important;
+	border-radius: var(--tb-radius) !important;
+}
+
+
+
+
+/* TASK */
+
+#calendarTabPanel #task-toolbox-container #task-toolbox {
+	background-color: var(--tb-base-bg) !important;
+	border: none !important;
+	color: var(--tb-base-fg) !important;
+	font-size: 11pt !important;
+	font-weight: normal !important;
+}
+
+#calendarContent {
+	background-color: transparent !important;
+	border: none !important;
+	color: var(--tb-base-fg) !important;
+	font-size: 11pt !important;
+	font-weight: normal !important;
+}
+
+#calendarContent #ltnSidebar {
+	background-color: var(--tb-base-bg) !important;
+	border: none !important;
+	color: var(--tb-base-fg) !important;
+	font-size: 11pt !important;
+	font-weight: normal !important;
+}
+
+#calendarContent #calendar-listtree-pane #calendar-list-tree-widget {
+	background-color: transparent !important;
+	border: none !important;
+	color: var(--tb-base-fg) !important;
+	font-size: 11pt !important;
+	font-weight: normal !important;
+}
+
+#task-addition-box {
+	-moz-appearance: none !important;
+	color: var(--tb-base-fg) !important;
+	font-weight: normal !important;
+	border: none !important;
+	font-size: 11pt !important;
+	background-color: transparent !important;
+}
+
+minimonth {
+	--mmMainBackground: none !important;
+	--mmBoxBackground: red !important;
+	--mmBoxBorderColor: none !important;
+	--mmDayColor: WindowText !important;
+	--mmDayBorderColor: transparent !important;
+	--mmDayOtherColor: var(--tb-base-fg) !important;
+	--mmDayOtherBackground: var(--tb-base-bg) !important;
+	--mmDayOtherBorderColor: none !important;
+	--mmDayTodayBackground: var(--tb-accent-bg) !important;
+	--mmDayTodayBorderColor: none !important;
+	--mmDayColor: var(--tb-base-fg) !important;
+	--mmDaySelectedBackground: var(--tb-secondary-bg) !important;
+	--mmDaySelectedBorderColor: none !important;
+	--mmDaySelectedTodayBackground: var(--tb-base-bg) !important;
+	--mmDaySelectedTodayBorderColor: none !important;
+}
+
+minimonth-header {
+	background-color: transparent !important;
+}
+
+#minimonth-pane  {
+	background: transparent !important;
+	font-weight: normal !important;
+	color: var(--tb-base-fg) !important;
+}
+
+.calendar-task-tree {
+	background-color: transparent !important;
+	border: none !important;
+	color: var(--tb-base-fg) !important;
+	font-weight: normal !important;
+}
+
+treecols {
+	background-color: transparent !important;
+	color: var(--tb-base-fg) !important;
+	border: none !important;
+	font-weight: bold !important;
+}
+
+.calendar-task-tree-col-title,
+.calendar-task-tree-col-duedate,
+.calendar-task-tree-col-completed,
+.calendar-task-tree-col-entrydate,
+.calendar-task-tree-col-priority,
+.calendar-task-tree-col-calendar,
+.calendar-task-tree-col-categories,
+.calendar-task-tree-col-location,
+.calendar-task-tree-col-calendar,
+.calendar-task-tree-col-percentcomplete {
+	height: 32px !important;
+	max-height: 32px !important;
+	background-color: var(--tb-base-bg) !important;
+	color: var(--tb-base-fg) !important;
+	border: none !important;
+	font-weight: bold !important;
+}
+
+
+sidebarheader, #agenda-listbox, #agenda-toolbar {
+	-moz-appearance: none !important;
+	background-image: none !important;
+	background-color: var(--tb-base-bg) !important;
+	border: none !important;
+}
+
+#miniday-month-panel {
+	-moz-appearance: none !important;
+	background: var(--tb-secondary-bg) !important;
+}
+
+.calendar-sidebar-splitter,
+.calendar-splitter {
+	border: none !important;
+}
+
+sidebarheader {
+	border: none !important;
+	background-color: var(--tb-base-bg) !important;
+}
+
+window #today-header {
+	background-color: transparent !important;
+}
+
+
+.today-subpane  {
+	border: none !important;
+	background-color: var(--tb-base-bg) !important;
+}
+
+/* TODO */
+/* TODO */
+/* TODO */
+/* Event Pane */
+
+#agenda-panel, vbox {
+	background: transparent !important;
+}
+
+/* CALENDAR */
+
+#unifinder-task-edit-field, #unifinder-task-edit-field .textbox-input {
+	background: var(--tb-base-bg) !important;
+	color: var(--tb-base-fg) !important;
+	margin: 10px !important;
+}
+
+#calendar-task-tree-detail, #show-completed-checkbox-box {
+	background: var(--tb-base-bg) !important;
+	border: none !important;
+	margin: 0px !important;
+}
+
+#unifinder-search-results-tree, #calendar-nav-control {
+	background-color: var(--tb-base-bg) !important;
+	background-image: none !important;
+}
+
+
+
+/* Remove borders */
+.headerdaybox, .headerbox,
+.labeldaybox, .timebarboxstack, .scrollbox, .timebar,
+.headertimespacer multiday-view-header-time-spacer,
+.navigation-inner-box {
+	background: var(--tb-base-bg) !important;
+	border: none !important;
+}
+
+/* Remove borders of tabs */
+#calendar-day-view-button, #calendar-week-view-button,
+#calendar-multiweek-view-button, #calendar-month-view-button {
+	border: none !important;
+}
+
+#calendar-day-view-button[selected="true"],
+#calendar-week-view-button[selected="true"],
+#calendar-multiweek-view-button[selected="true"],
+#calendar-month-view-button[selected="true"] {
+	background: none !important;
+	background-color: var(--tb-base-bg) !important;
+	border: none !important;
+	font-weight: normal !important;
+}
+
+#calendar-toolbox {
+	background: var(--tb-base-bg) !important;
+	border: none !important;
+}
+
+#unifinder-searchBox {
+	background: var(--tb-base-bg) !important;
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+	border: none !important;
+}
+
+#event-filter-menulist {
+	background: var(--tb-base-bg) !important;
+	border: none !important;
+	border-radius: var(--tb-radius) !important;
+	height: 28px !important;
+}
+
+#view-deck, .navigation-bottombox, .calendar-event-column-linebox {
+	background-color: var(--tb-base-bg) !important;
+	border: none !important;
+}
+
+#unifinder-search-results-tree-cols {
+	background: transparent !important;
+	height: 32px !important;
+	border: none !important;
+}
+
+#unifinder-search-results-tree-cols #unifinder-search-results-tree-col-location,
+#unifinder-search-results-tree-cols #unifinder-search-results-tree-col-calendarname,
+#unifinder-search-results-tree-cols #unifinder-search-results-tree-col-categories,
+#unifinder-search-results-tree-cols #unifinder-search-results-tree-col-enddate,
+#unifinder-search-results-tree-cols #unifinder-search-results-tree-col-status,
+#unifinder-search-results-tree-cols #unifinder-search-results-tree-col-startdate,
+#unifinder-search-results-tree-cols #unifinder-search-results-tree-col-title {
+	border: none !important;
+	background: var(--tb-base-bg) !important;
+}
+
+calendar-event-column {
+	border: none !important;
+	background-color: var(--tb-base-bg) !important;
+}
+
+box.calendar-time-bar-box-odd {
+	background: var(--tb-base-active) !important;
+}
+box.calendar-time-bar-box-even {
+	background: var(--tb-base-bg) !important;
+}
+
+
+.labelbox, .labeldaybox calendar-day-label {
+	background: var(--tb-base-bg) !important;
+	border: none !important;
+	font-weight: bold !important;
+	color: var(--tb-base-fg) !important;
+}
+
+calendar-header-container {
+	background-color: var(--tb-base-bg) !important;
+	border: none !important;
+}
+
+
+calendar-header-container[weekend="true"]{
+	background-color: #EE4F8499 !important;
+	border: none !important;
+}
+
+.calendar-event-column-linebox[weekend="true"] {
+	background-color: var(--tb-base-bg) !important;
+}
+
+.calendar-event-column-linebox[off-time="true"][weekend="true"] {
+	background-color: transparent !important;
+}
+
+.calendar-event-column-linebox[off-time="true"] {
+	background-color: var(--tb-base-bg) !important;
+}
+
+
+
+
+
+
+calendar-header-container[relation="today"],
+.calendar-event-column-linebox[relation="today"],
+calendar-day-label[orient][relation="today"] {
+	background-color: var(--tb-accent-bg) !important;
+}   
+
+.calendar-event-column-linebox[relation="today"] {
+	border: none !important;
+}
+
+calendar-header-container[weekend="true"][relation="today"],
+.calendar-event-column-linebox[weekend="true"][relation="today"] {
+	background-color: var(--tb-accent-bg) !important;
+	
+}
+
+calendar-header-container[relation="today"],
+calendar-header-container[relation="today"][rotated="true"] {
+	border-left: 0 solid rgba(0,0,0,0.65) !important;
+	border-right: 0 solid !important;
+	-moz-border-right-colors: #333 #333 !important;
+}
+
+
+
+
+
+/**/
+calendar-header-container[selected="true"],
+.calendar-event-column-linebox[selected="true"] {
+	background-color: var(--tb-base-active) !important;
+}
+
+calendar-header-container[weekend="true"][selected="true"],
+.calendar-event-column-linebox[weekend="true"][selected="true"] {
+	background-color: var(--tb-base-active) !important;
+}
+/**/
+
+calendar-header-container[selected="true"][relation="today"],
+.calendar-event-column-linebox[selected="true"][relation="today"] {
+	background-color: #ff975999 !important;
+}
+
+calendar-header-container[selected="true"][weekend="true"][relation="today"],
+.calendar-event-column-linebox[selected="true"][weekend="true"][relation="today"] {
+	background-color: var(--tb-base-active) !important;
+}
+/**/
+
+
+
+.calendar-event-column-linebox[off-time="true"][relation="today"] {
+	background-color: #b86239DD !important;
+}
+
+.calendar-event-column-linebox[off-time="true"][weekend="true"][relation="today"] {
+	background-color: #5b234eDD !important;
+}
+/**/
+
+.calendar-event-column-linebox[off-time="true"][selected="true"] {
+	background-color: var(--tb-accent-bg) !important;
+}
+
+.calendar-event-column-linebox[off-time="true"][weekend="true"][selected="true"] {
+	background-color: #6c6c6cDD !important;
+}
+/**/
+
+.calendar-event-column-linebox[off-time="true"][selected="true"][relation="today"] {
+	background-color: #dd7644DD !important;
+}
+
+.calendar-event-column-linebox[off-time="true"][weekend="true"][selected="true"][relation="today"] {
+	background-color: #6d2a5eDD !important;
+}
+/**/
+
+.multiday-view-header-day-box[orient="vertical"] .calendar-event-column-header {
+	border-bottom: 1px solid rgba(0,0,0,0.65) !important;
+}
+
+.calendar-event-column-linebox[orient="horizontal"] {
+	border-right: 1px solid rgba(0,0,0,0.65) !important;
+}
+
+.calendar-event-column-linebox[orient="vertical"] {
+	border-bottom: 1px solid rgba(0,0,0,0.65) !important;
+}
+
+.calendar-event-column-linebox[orient="horizontal"][relation="today"] {
+	border-right: 1px solid rgb(21,21,21) !important;
+}
+
+.calendar-event-column-linebox[orient="vertical"][relation="today"] {
+	border-bottom: 1px solid rgb(21,21,21) !important;
+}
+
+
+
+.multiday-view-header-time-spacer[orient="horizontal"] {
+	border-bottom: 1px solid #202020 !important;
+	border-right: 1px solid #202020 !important;
+	-moz-border-right-colors: #202020 #202020 !important;
+	background: var(--tb-base-bg) !important;
+}
+
+.multiday-view-header-time-spacer[orient="vertical"] {
+	border-right: 1px solid #202020 !important;
+	-moz-border-right-colors: #202020 #202020 !important;
+	background: #202020 !important;
+}
+
+.multiday-view-label-box[orient="horizontal"] > .multiday-view-label-time-spacer {
+	border-right: 1px solid #202020 !important;
+	background: var(--tb-base-bg) !important;
+	-moz-border-right-colors: #202020 #202020 !important;    
+}
+
+.multiday-view-header-day-box[orient="horizontal"] {
+	border-right: 1px solid #080808 !important;
+	border-bottom: 1px solid #080808 !important;
+}
+
+.multiday-view-header-day-box[orient="horizontal"][todaylastinview="true"] {
+	border-right: 1px solid #080808 !important;
+}
+
+.multiday-view-label-day-box[orient="horizontal"] {
+	border-top: 1px solid #202020 !important;
+	border-right: 1px solid #202020 !important;
+}
+
+.multiday-view-label-day-box[orient="vertical"] {
+	border-top: 1px solid #202020 !important;
+}
+
+.multiday-view-header-day-box[orient="vertical"] {
+	border-top: 1px solid #202020 !important;
+	border-right: 2px solid #202020 !important;
+	-moz-border-right-colors: #202020 #202020 !important;   
+}
+
+
+/* asdadsa */
+.multiday-view-day-box {
+	border-right: 1px solid rgba(0,0,0,0.65) !important;
+	border-bottom: 1px solid rgba(0,0,0,0.65) !important;
+}
+
+calendar-month-day-box-item[selected="true"] .calendar-color-box,
+calendar-event-box[selected="true"] .calendar-color-box,
+calendar-editable-item[selected="true"] .calendar-color-box {
+	-moz-box-shadow: 1px 2px 5px rgba(0,0,0, 0.4);
+}
+/** Start time bar **/
+.calendar-time-bar-box-even {
+	color: #cbcbcb !important;
+	background-color: #202020 !important;
+	border-right: 2px solid #242424 !important;
+	-moz-border-right-colors: #202020 #202020 !important;      
+}
+
+.calendar-time-bar-box-odd {
+	color: #cbcbcb !important;
+	background-color: #1b1b1b !important;
+	border-right: 0px solid #242424 !important;
+	-moz-border-right-colors: #202020 #202020 !important;      
+}
+
+.calendar-time-bar-box-even[off-time="true"] {
+	color: #adadad !important;
+	background-color: var(--tb-base-bg) !important;
+	border-right: 0px solid #242424 !important;
+	-moz-border-right-colors: #202020 #202020 !important;      
+}
+
+.calendar-time-bar-box-odd[off-time="true"] {
+	color: #adadad !important;
+	background-color: var(--tb-base-active) !important;
+	border-right: 2px solid #242424 !important;
+	-moz-border-right-colors: #202020 #202020 !important;      
+}
+
+.calendar-time-bar-box-odd[orient="horizontal"],
+.calendar-time-bar-box-even[orient="horizontal"] {
+	border-right: 1px solid #242424 !important;
+	border-top: 1px solid #242424 !important;
+}
+
+.calendar-time-bar-box-odd[orient="vertical"],
+.calendar-time-bar-box-even[orient="vertical"] {
+	border-bottom: 1px  transparent !important;
+	border-right: 2px solid #242424 !important;
+	-moz-border-right-colors: #202020 #202020 !important;    
+}
+
+
+
+
+
+
+
+/*  */ 
+/*  */
+/*  */
+
+
+.calendar-month-view-grid-row,
+.calendar-month-view-grid-column {
+	border: 1px solid #121212 !important;
+	border-top: 0px !important;
+	border-left: 0px !important;
+}
+
+.calendar-month-view-grid-column:first-of-type {
+	border: 1px solid #121212 !important;
+	border-top: 0px !important;
+	border-left: 1px solid rgba(0,0,0,0.65)!important;
+	margin-left: -1px !important;
+}
+
+.calendar-month-day-box-current-month  {
+	background-color: var(--tb-base-bg) !important;
+	border: transparent !important;
+}
+.calendar-month-day-box-current-month[selected=true] {
+	background-color: var(--tb-accent-bg) !important;
+	border: transparent !important;
+}
+
+.calendar-month-day-box-current-month .calendar-month-day-box-date-label {
+	color:  var(--tb-base-fg) !important;
+	background-color: #2B2B2B !important;
+}
+
+.calendar-month-day-box-day-off {
+	background-color: var(--tb-base-active) !important;
+	border: transparent !important;    
+}
+
+.calendar-month-day-box-day-off[selected=true] {
+	background-color: var(--tb-base-bg) !important;
+	border: transparent !important;    
+}
+
+.calendar-month-day-box-day-off .calendar-month-day-box-date-label {
+	background-color: var(--tb-base-bg) !important;
+}
+
+.calendar-month-day-box-other-month {
+	background-color: var(--tb-base-active) !important;
+	border: transparent !important;    
+}
+
+.calendar-month-day-box-other-month[selected=true] {
+	background-color: var(--tb-accent-bg) !important;
+	border: transparent !important;    
+}
+
+.calendar-month-day-box-other-month .calendar-month-day-box-date-label {
+	background-color: var(--tb-base-bg) !important;
+	color: var(--tb-base-fg) !important;
+}
+
+.calendar-month-day-box-other-month.calendar-month-day-box-day-off {
+	background-color: var(--tb-base-active) !important;
+	border: transparent !important;    
+}
+
+.calendar-month-day-box-other-month.calendar-month-day-box-day-off .calendar-month-day-box-date-label {
+	background-color: var(--tb-base-bg) !important;
+	color: var(--tb-base-fg) !important;
+}
+
+
+
+/*  */
+/* here */
+
+.calendar-month-day-box-current-month[relation="today"],
+.calendar-month-day-box-day-off[relation="today"],
+.calendar-month-day-box-other-month[relation="today"],
+.calendar-month-day-box-other-month.calendar-month-day-box-day-off[relation="today"] {
+	background-color: #F47D43 !important;
+	border: transparent !important;
+	box-shadow: inset 1px 1px 1px 0px rgba(0,0,0,0.45) !important;
+	border-right: 3px solid !important;
+	-moz-border-right-colors: #333 #333 #333 !important;    
+	border-top: 1px solid rgba(0,0,0,0.65) !important;
+}
+
+.calendar-month-day-box-day-off[relation="today"] {
+	background-color: var(--tb-accent-bg) !important;
+}
+
+.calendar-month-day-box-other-month[relation="today"] {
+	background-color: #5e3420DD !important;
+}
+
+.calendar-month-day-box-other-month.calendar-month-day-box-day-off[relation="today"] {
+	background-color: #31162bDD !important;
+}
+/**/
+
+.calendar-month-day-box-date-label[relation="today"],
+.calendar-month-day-box-day-off .calendar-month-day-box-date-label[relation="today"],
+.calendar-month-day-box-other-month .calendar-month-day-box-date-label[relation="today"],
+.calendar-month-day-box-other-month.calendar-month-day-box-day-off .calendar-month-day-box-date-label[relation="today"] {
+	background-color: #F48853 !important;
+	text-shadow: rgba(0,0,0,0.65) 0px 1px 1px, rgba(0,0,0,0.40) 1px 1px 0px!important;
+	color: rgb(255,255,255) !important;
+	font-weight: bold !important; 
+}
+
+.calendar-month-day-box-day-off .calendar-month-day-box-date-label[relation="today"]{
+	background-color: #252525 !important; 
+}
+
+.calendar-month-day-box-other-month .calendar-month-day-box-date-label[relation="today"] {
+	background-color: #653822 !important; 
+}
+
+.calendar-month-day-box-other-month.calendar-month-day-box-day-off .calendar-month-day-box-date-label[relation="today"] {
+	background-color: #34182e !important;
+}
+
+
+/*ICONS*/
+
+/*FOLDER ICONS*/
+
+
+#folderTree treechildren::-moz-tree-image {
+
+	width: 14px !important;
+	-moz-image-region: rect(0px 12px 12px 0) !important;
+}
+
+treechildren::-moz-tree-image(folderNameCol) {
+
+	list-style-image: url("assets/tree-folder.svg") !important;
+}
+#folderTree treechildren::-moz-tree-image(folderNameCol, specialFolder-Inbox) {
+
+	list-style-image: url("assets/tree-inbox.svg") !important;
+}
+treechildren::-moz-tree-image(folderNameCol, specialFolder-Sent) {
+
+	list-style-image: url("assets/tree-sent.svg") !important;
+}
+treechildren::-moz-tree-image(folderNameCol, specialFolder-Outbox) {
+
+	list-style-image: url("assets/tree-outbox.svg") !important;
+}
+treechildren::-moz-tree-image(folderNameCol, specialFolder-Drafts) {
+
+	list-style-image: url("assets/tree-drafts.svg") !important;
+}
+treechildren::-moz-tree-image(folderNameCol, specialFolder-Templates) {
+
+	list-style-image: url("assets/tree-template.svg") !important;
+}
+treechildren::-moz-tree-image(folderNameCol, specialFolder-Junk) {
+
+	list-style-image: url("assets/tree-flame-junk.svg") !important;
+}
+treechildren::-moz-tree-image(folderNameCol, specialFolder-Trash) {
+
+	list-style-image: url("assets/tree-trash.svg") !important;
+}
+treechildren::-moz-tree-image(folderNameCol, specialFolder-Archive) {
+
+	list-style-image: url("assets/tree-archive.svg") !important;
+}
+treechildren::-moz-tree-image(folderNameCol, specialFolder-Virtual) {
+
+	list-style-image: url("assets/tree-folder-search.svg") !important;
+}
+
+/*TWISTE*/
+
+treechildren:-moz-tree-twisty {
+
+	list-style-image: url("assets/twisty.svg") !important;
+	padding: 0 5px !important;
+}
+treechildren:-moz-tree-twisty(open) {
+
+	list-style-image: url("assets/twisty-expanded.svg") !important;
+	padding: 0 5px !important;
+}
+
+/*Feed, News*/
+
+treechildren::-moz-tree-image(folderNameCol, serverType-nntp) {
+
+	list-style-image: url("assets/tree-news.svg") !important;
+}
+treechildren::-moz-tree-image(folderNameCol, isFeedFolder-true) {
+
+	list-style-image: url("assets/tree-rss.svg") !important;
+}
+
+/*IMAP/POP account nodes*/
+
+treechildren::-moz-tree-image(folderNameCol, isServer-true) {
+
+	list-style-image: url("assets/tree-email-account.svg") !important;
+}
+
+/*Local folders*/
+
+treechildren::-moz-tree-image(folderNameCol, isServer-true, serverType-none) {
+
+	list-style-image: url("assets/tree-local-account.svg") !important;
+}
+
+ /*News and feed server*/
+
+treechildren::-moz-tree-image(folderNameCol, isServer-true, serverType-nntp) {
+
+	list-style-image: url("assets/tree-news.svg") !important;
+}
+treechildren::-moz-tree-image(folderNameCol, isServer-true, serverType-rss) {
+
+	list-style-image: url("assets/tree-news.svg") !important;
+}
+
+/*Message List*/
+
+treechildren::-moz-tree-image(junkStatusCol),
+treechildren::-moz-tree-image(junkStatusCol, notjunk) {
+
+	list-style-image: url("assets/col-flame-empty.svg") !important;
+}
+treechildren::-moz-tree-image(junkStatusCol, junk) {
+	list-style-image: url("assets/col-flame-junk.svg") !important;
+}
+treechildren::-moz-tree-image(subjectCol, new) {
+
+	list-style-image: url("assets/col-star-new.svg") !important;
+}
+treechildren::-moz-tree-image(flaggedCol) {
+
+	list-style-image: url("assets/col-star.svg") !important;
+}
+treechildren::-moz-tree-image(flaggedCol, flagged) {
+
+	list-style-image: url("assets/col-starred.svg") !important;
+}
+treechildren::-moz-tree-image(unreadButtonColHeader) {
+
+	list-style-image: url("assets/col-dot-unread.svg") !important;
+}
+treechildren::-moz-tree-image(unreadButtonColHeader, unread) {
+
+	list-style-image: url("assets/col-dot-read.svg") !important;
+}
+
+/*Replies*/
+
+treechildren::-moz-tree-image(subjectCol, forwarded) {
+
+	list-style-image: url("assets/col-forward.svg") !important;
+}
+treechildren::-moz-tree-image(subjectCol, replied) {
+
+	list-style-image: url("assets/col-reply.svg") !important;
+}
+treechildren::-moz-tree-image(subjectCol, replied, forwarded) {
+
+	list-style-image: url("assets/col-forward-reply.svg") !important;
+}
+
+/* LIGHTNING */
+
+#today-header,
+#tomorrow-header,
+#nextweek-header {
+	background-color: transparent !important;
+}
+
+treenode-checkbox {
+	padding-bottom: 4px !important;
+}
+
+treenode-checkbox > .checkbox-check {
+	background: url("assets/twisty.svg") center no-repeat !important;
+}
+
+treenode-checkbox[checked="true"] > .checkbox-check {
+	background-image: url("assets/twisty-expanded.svg") !important;
+}
+
+.calendar-task-tree-col-priority {
+	list-style-image: url("assets/cal-task-images.png") !important;
+}
+
+#todaypane-new-event-button {
+	list-style-image: url("assets/cal-newevent.svg") !important;
+}
+/* Write button */
+#newMsgButton-mail-menuitem {
+
+	list-style-image: url("assets/cal-newmsg.svg") !important;
+}
+.imipAcceptRecurrencesButton,
+.imipAcceptButton {
+
+	list-style-image: url("assets/cal-complete.svg") !important;
+}
+.imipDeclineCounterButton,
+.imipDeclineRecurrencesButton,
+.imipDeclineButton {
+
+	list-style-image: url("assets/cal-decline.svg") !important;
+}
+.imipTentativeRecurrencesButton,
+.imipTentativeButton {
+
+	list-style-image: url("assets/cal-tentative.svg") !important;
+}
+.imipDetailsButton {
+
+	list-style-image: url("assets/cal-find.svg") !important;
+}
+.imipAddButton {
+
+	list-style-image: url("assets/cal-newevent.svg") !important;
+}
+.imipRescheduleButton,
+.imipUpdateButton {
+
+	list-style-image: url("assets/cal-synchronize.svg") !important;
+}
+.imipDeleteButton {
+
+	list-style-image: url("assets/cal-delete.svg") !important;
+}
+.imipReconfirmButton {
+
+	list-style-image: url("assets/cal-priotity.svg") !important;
+}
+#calendar-add-task-button {
+
+	list-style-image: url("assets/cal-newtask.svg") !important;
+}
+#task-actions-category {
+
+	list-style-image: url("assets/cal-category.svg") !important;
+}
+#task-actions-markcompleted {
+
+	list-style-image: url("assets/cal-complete.svg") !important;
+}
+#task-actions-priority {
+
+	list-style-image: url("assets/cal-priority.svg") !important;
+}
+#calendar-delete-task-button {
+
+	list-style-image: url("assets/cal-delete.svg") !important;
+}
+.today-pane-cycler {
+
+	list-style-image: url("assets/cal-dview-cycler.svg") !important;
+}
+
+
+/* COMPOSE WINDOW */
+
+#MsgHeadersToolbar, 
+#composeContentBox,
+#msgcomposeWindow,
+#compose-toolbox, 
+#headers-parent, 
+#headers-box  {
+	border: none !important;
+	background: transparent !important;
+}
+
+#msgcomposeWindow,
+#compose-toolbox,
+#composeContentBox {
+	background: var(--tb-base-bg) !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+
+#compose-toolbox {
+	padding: 0  5px !important;
+}
+
+.toolbarbutton-1 {
+	background: var(--tb-base-bg) !important;
+	border-radius: var(--tb-radius) !important;
+}
+
+.toolbarbutton-1:hover {
+	background: var(--tb-base-bg) !important;
+	border-radius: var(--tb-radius) !important;
+	border: solid 1px !important;
+}
+
+
+#msgIdentity {
+	background: var(--tb-base-bg) !important;
+	border-radius: var(--tb-radius) !important;
+	border: none !important;
+	height: 32px !important;
+}
+
+
+#addressingWidget .plain {
+	background: var(--tb-base-bg) !important;
+	border-radius: var(--tb-radius) !important;
+	border: none !important;
+	height: 32px !important;
+}
+
+.aw-menulist:hover {
+	background:  var(--tb-base-bg) !important;
+	border-radius: var(--tb-radius) !important;
+	border: none !important;
+}
+
+.aw-menulist[open=false] {
+	background:  var(--tb-base-bg) !important;
+	border-radius: var(--tb-radius) !important;
+	border: none !important;
+}
+
+.aw-menulist[open=true] {
+	background:  var(--tb-base-bg) !important;
+	border-radius: var(--tb-radius) !important;
+}
+
+.toolbar-focustarget {
+	background: var(--tb-base-bg) !important;
+	border-radius: var(--tb-radius) !important;
+	border: none !important;
+}
+
+
+/* ADDRESS BOOK */
+
+#addressbookWindow, #ab-toolbox, 
+#abContent, #status-bar, 
+#CardViewOuterBox, #dirTreeBox #dirTree {
+	background: transparent !important;
+	border: none !important;
+}
+
+#addressbookWindow, #ab-toolbox,
+#abContent, #status-bar {
+	background: var(--tb-base-bg) !important;
+}
+
+#dirTreeBox #dirTree {
+	background: var(--tb-base-bg) !important;
+	color: var(--tb-base-fg) !important;
+}
+
+#dirTree-splitter {
+	border: none !important;
+	background: var(--tb-base-bg) !important;
+}
+
+#abResultsTree {
+	background: transparent !important;
+}
+
+#results-splitter {
+	background: var(--tb-base-bg) !important;
+	border: none !important;
+}
+
+#abResultsTreeCols {
+	background: var(--tb-base-bg) !important;
+	border: none !important;
+}
+
+
+#abResultsTreeCols {
+	height: 32px !important;
+}
+
+#abResultsTreeCols > * {
+	border: none !important;
+}
+
+#abResultsTreeCols .treecol-image {
+	background: transparent !important;
+}
