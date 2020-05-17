@@ -14,6 +14,13 @@
 	color: var(--tb-base-fg);
 }
 
+/* The Main Window */
+#messengerWindow,
+#messengerBox, #mail-toolbox {
+	background: var(--tb-base-bg) !important;
+	border: none !important;
+}
+
 menubar > menu {
 	color: var(--tb-base-fg) !important;
 }
@@ -59,6 +66,16 @@ menupopup {
 	padding: 4px 0 !important;
 }
 
+splitter {
+/* 	background: var(--tb-base-bg) !important; */
+/* 	width: 4px !important; */
+/* 	box-shadow: none !important; */
+}
+
+#status-bar {
+	background: var(--tb-base-bg) !important;
+	border: none !important;
+}
 
 
 /* TABS */
@@ -195,6 +212,10 @@ toolbarseparator {
 .treecol-image, treecol {
 	border: none !important;
 	background: var(--tb-base-bg) !important;
+}
+
+treecol {
+	height: 32px !important;
 }
 
 #messagepanebox label {
