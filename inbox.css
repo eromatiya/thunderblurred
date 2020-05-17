@@ -10,8 +10,6 @@
 	--tb-radius: 6px;
 }
 
-
-
 /* Toolbar */
 #tabmail-container #tabmail #tabmail-tabbox 
 #tabpanelcontainer #mailContent #mail-toolbox {
@@ -36,6 +34,11 @@
 .toolbarbutton-1 {
 	background: var(--tb-base-bg) !important;
 	height: 28px !important;
+}
+
+.toolbarbutton-1:hover {
+	background-color: var(--tb-base-hover) !important;
+	border-radius: var(--tb-radius) !important;
 }
 
 /* The line in the toolbar */
