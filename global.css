@@ -178,3 +178,22 @@ tab.tabmail-tab {
 	background: var(--tb-base-bg) !important;
 }
 
+
+/* Today Panel */
+
+sidebarheader {
+	font-weight: bold !important;
+}
+#agenda-listbox, #agenda-toolbar, #mini-day-box, sidebarheader {
+	-moz-appearance: none !important;
+	background-image: none !important;
+	background-color: var(--tb-base-bg) !important;
+	border: none !important;
+}
+
+
+
+#miniday-dropdown-minimonth {
+/* 	background: transparent !important; */
+}
+
