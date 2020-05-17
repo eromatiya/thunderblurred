@@ -67,3 +67,138 @@ minimonth {
 	--mmDaySelectedTodayBorderColor: none !important;
 }
 
+
+
+
+/* Minimonth Pane */
+#minimonth-pane, #ltnSidebar {
+	background: var(--tb-base-bg) !important;
+}
+
+
+
+/* Main Event and Calendar Panel */
+
+/* This is behind the #unifinder-search-results-tree */
+#calendar-view-box {
+	background:  var(--tb-base-bg) !important;
+}
+
+#unifinder-search-results-tree {
+	background: var(--tb-base-bg) !important;
+}
+
+/* Unifinder bar */
+#bottom-events-box #unifinder-searchBox {
+	background:  var(--tb-base-bg) !important;
+	border: none !important;
+}
+
+#unifinder-search-results-tree-cols treecol {
+	background: var(--tb-base-bg) !important;
+}
+
+#calendar-nav-control {
+	background: var(--tb-base-bg) !important;
+}
+
+/* Event Filter */
+#event-filter-menulist {
+	background: var(--tb-base-bg) !important;
+	border: none !important;
+	border-radius: var(--tb-radius) !important;
+}
+
+/* Navigation bar, the bar before the tabs */
+.navigation-inner-box {
+	background: var(--tb-base-bg) !important;
+	border: none !important;
+}
+
+/* Calendar tabs */
+#view-tabs .calview[selected=true] {
+	background: var(--tb-base-bg) !important;
+	border: none !important;
+}
+
+#view-tabs .calview:hover {
+	background: var(--tb-base-hover) !important;
+	border: none !important;
+}
+
+/* Spacer between column and calendar */
+.navigation-bottombox {
+	background: var(--tb-base-bg) !important;
+}
+
+
+/* CALENDAR BACKGROUNDS */
+/* The background of calendar and event  */
+#view-deck {
+	background: var(--tb-base-bg) !important;
+	border-color: var(--tb-base-bg) !important;
+}
+
+
+/* DAY TAB */
+
+#day-view box calendar-day-label,
+#day-view box calendar-header-container,
+#day-view box calendar-event-column {
+	background: var(--tb-base-bg) !important;
+	border-color: var(--tb-base-bg) !important;
+}
+
+
+/* WEEK TAB */
+calendar-event-column {
+  background-color: var(--tb-base-bg) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CALENDAR CORE */
+
+calendar-header-container[weekend="true"]{
+    background-color: #A1EFD3AA !important;
+}
+
+.calendar-event-column-linebox[weekend="true"] {
+    background-color: #53E2AE60 !important;
+}
+
+calendar-header-container[selected="true"],
+.calendar-event-column-linebox[selected="true"] {
+    background-color: #6498EFAA !important;
+}
+
+calendar-header-container[weekend="true"][selected="true"],
+.calendar-event-column-linebox[weekend="true"][selected="true"] {
+    background-color: #F1FF5260 !important;
+}
+
+
+
+

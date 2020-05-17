@@ -68,6 +68,61 @@ vbox, sidebarheader {
 	border: none !important;
 }
 
+.navigation-spacer-box {
+	border: none !important;
+}
+
+.navigation-bottombox {
+	background: transparent !important;
+}
+
+
+
+/* The background of calendar and event  */
+#view-deck {
+	background: transparent !important;
+	border-color: var(--tb-base-bg) !important;
+}
+
+#day-view box calendar-day-label,
+#day-view box calendar-header-container,
+#day-view box calendar-event-column {
+	background: transparent !important;
+	border-color: var(--tb-base-bg) !important;
+}
+
+.topbox box {
+	background: transparent !important;
+}
+
+calendar-event-column {
+  background-color: transparent !important;
+}
+
+
+
+/* WEEK TAB */
+calendar-event-column {
+  background-color: transparent !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -81,66 +136,3 @@ vbox, sidebarheader {
 }
 
 
-
-
-
-
-
-
-
-
-/* Global Addons Main Event and calendar */
-
-/* Minimonth Pane */
-#minimonth-pane, #ltnSidebar {
-	background: var(--tb-base-bg) !important;
-}
-
-/* Main Event and Calendar Panel */
-
-/* This is behind the #unifinder-search-results-tree */
-#calendar-view-box {
-	background:  var(--tb-base-bg) !important;
-}
-
-#unifinder-search-results-tree {
-	background: var(--tb-base-bg) !important;
-}
-
-/* Unifinder bar */
-#bottom-events-box #unifinder-searchBox {
-	background:  var(--tb-base-bg) !important;
-	border: none !important;
-}
-
-#unifinder-search-results-tree-cols treecol {
-	background: var(--tb-base-bg) !important;
-}
-
-#calendar-nav-control {
-	background: var(--tb-base-bg) !important;
-}
-
-/* Event Filter */
-#event-filter-menulist {
-	background: var(--tb-base-bg) !important;
-	border: none !important;
-	border-radius: var(--tb-radius) !important;
-}
-
-/* Navigation bar, the bar before the tabs */
-.navigation-inner-box {
-	background: var(--tb-base-bg) !important;
-	border: none !important;
-}
-
-/* Calendar tabs */
-#view-tabs .calview[selected=true] {
-	background: var(--tb-base-bg) !important;
-	border: none !important;
-}
-
-#view-tabs .calview:hover {
-	background: var(--tb-base-hover) !important;
-	border: none !important;
-}
