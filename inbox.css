@@ -10,10 +10,19 @@
 	--tb-radius: 6px;
 }
 
+
+
 /* Toolbar */
 #tabmail-container #tabmail #tabmail-tabbox 
 #tabpanelcontainer #mailContent #mail-toolbox {
 	background-color: var(--tb-base-bg) !important;
+}
+
+/* Toolbar bottom line */
+.mail-toolbox::after,
+.contentTabToolbox::after {
+	box-shadow: none !important;
+	border: none !important;
 }
 
 /* Buttons in toolbar */
@@ -41,6 +50,10 @@ toolbarseparator {
 	background: var(--tb-base-bg) !important;
 }
 
+treecol {
+	height: 32px !important;
+}
+
 #messagepanebox label {
 	color: var(--tb-base-fg) !important;
 }
@@ -65,6 +78,34 @@ toolbarseparator {
 	background:  var(--tb-base-bg) !important;
 }
 
+
+/* Thread tree */
+
+#threadTree > treechildren::-moz-tree-cell-text(subjectCol) {
+	-moz-margin-start: -3px !important; 
+	-moz-margin-end: 5px !important;
+	color: var(--tb-base-fg) !important;
+}
+
+#threadTree treechildren::-moz-tree-row(odd) {
+	background-color: var(--tb-base-bg) !important;
+}
+
+#threadTree treechildren::-moz-tree-row(odd, selected) {
+	background-color: var(--tb-accent-bg) !important;
+}
+
+#threadTree treechildren::-moz-tree-row {
+	height: 32px !important;
+	max-height: 32x !important;
+	padding-top: 0px !important;
+	margin: 0 !important;
+	/* 	color: blue !important; */
+}
+
+#threadTree treechildren {
+	font-size: 11pt !important;
+}
 
 
 /* Folder Pane */
