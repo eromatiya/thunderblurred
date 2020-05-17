@@ -3,7 +3,7 @@
 :root {
 	--tb-base-bg: #00000039;
 	--tb-base-fg: #ffffff;
-	--tb-base-hover: #00000068;
+	--tb-base-hover: #ffffff30;
 	--tb-base-active: #00000068;
 	--tb-accent-bg: #6498EFEE;
 	--tb-secondary-bg: #252525;
@@ -95,6 +95,19 @@ treecol {
 	background-color: var(--tb-accent-bg) !important;
 }
 
+#threadTree treechildren::-moz-tree-row(even, selected) {
+	background-color: var(--tb-accent-bg) !important;
+}
+
+#threadTree treechildren::-moz-tree-row(odd, hover) {
+	background-color: var(--tb-base-hover) !important;
+}
+
+#threadTree treechildren::-moz-tree-row(even, hover) {
+	background-color: var(--tb-base-hover) !important;
+}
+
+
 #threadTree treechildren::-moz-tree-row {
 	height: 32px !important;
 	max-height: 32x !important;
@@ -135,7 +148,7 @@ treecol {
 }
 
 #folderTree > treechildren::-moz-tree-row(hover) {
-	background-color: var(--tb-accent-bg) !important;
+	background-color: var(--tb-base-hover) !important;
 }
 
 #folderTree > treechildren::-moz-tree-line {
