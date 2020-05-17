@@ -1,10 +1,37 @@
+/*           ▄▄                                  ▄▄                     
+   ██      ██                                  ██                     
+ ███████   ██▄████▄  ██    ██  ██▄████▄   ▄███▄██   ▄████▄    ██▄████ 
+   ██      ██▀   ██  ██    ██  ██▀   ██  ██▀  ▀██  ██▄▄▄▄██   ██▀     
+   ██      ██    ██  ██    ██  ██    ██  ██    ██  ██▀▀▀▀▀▀   ██      
+   ██▄▄▄   ██    ██  ██▄▄▄███  ██    ██  ▀██▄▄███  ▀██▄▄▄▄█   ██      
+    ▀▀▀▀   ▀▀    ▀▀   ▀▀▀▀ ▀▀  ▀▀    ▀▀    ▀▀▀ ▀▀    ▀▀▀▀▀    ▀▀  
 
+ ▄▄        ▄▄▄▄                         
+ ██        ▀▀██                         
+ ██▄███▄     ██      ██    ██   ██▄████ 
+ ██▀  ▀██    ██      ██    ██   ██▀     
+ ██    ██    ██      ██    ██   ██      
+ ███▄▄██▀    ██▄▄▄   ██▄▄▄███   ██      
+ ▀▀ ▀▀▀       ▀▀▀▀    ▀▀▀▀ ▀▀   ▀▀ 
+*/
+
+
+/*Override default icons*/
 @import "icons.css";
 
+/*Add transparency to vanilla thunderbird*/
 @import "transparency.css";
+
+/*Override transparent elements*/
 @import "global.css";
+
+/*Override global elements*/
 @import "inbox.css";
 
 
+
+/*Add transparency to addons*/
 @import "transparency-addon.css";
+
+/*Override transparent addon elements*/
 @import "global-addon.css";
