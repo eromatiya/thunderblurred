@@ -53,6 +53,20 @@ vbox, sidebarheader {
 	border: none !important;
 }
 
+.navigation-inner-box {
+	border: none !important;
+}
+
+#view-tabs {
+	background: transparent !important;
+	border: none !important;
+}
+
+/* Calendar tabs */
+#view-tabs .calview {
+	background: transparent !important;
+	border: none !important;
+}
 
 
 
@@ -112,4 +126,21 @@ vbox, sidebarheader {
 	background: var(--tb-base-bg) !important;
 	border: none !important;
 	border-radius: var(--tb-radius) !important;
+}
+
+/* Navigation bar, the bar before the tabs */
+.navigation-inner-box {
+	background: var(--tb-base-bg) !important;
+	border: none !important;
+}
+
+/* Calendar tabs */
+#view-tabs .calview[selected=true] {
+	background: var(--tb-base-bg) !important;
+	border: none !important;
+}
+
+#view-tabs .calview:hover {
+	background: var(--tb-base-hover) !important;
+	border: none !important;
 }
