@@ -34,3 +34,36 @@ sidebarheader {
 #miniday-dropdown-minimonth {
 /* 	background: transparent !important; */
 }
+
+
+
+/* Calendar Pane */
+
+.mail-toolbox {
+	background: var(--tb-base-bg) !important;
+}
+
+/* Calendar Left Pane List */
+#calendar-list-tree-widget {
+	background: var(--tb-base-bg) !important;
+}
+
+minimonth {
+	--mmMainBackground: transparent !important;
+	--mmBoxBackground: var(--tb-base-bg) !important;
+	--mmBoxBorderColor: none !important;
+	--mmDayColor: WindowText !important;
+	--mmDayBorderColor: transparent !important;
+	--mmDayOtherColor: var(--tb-base-fg) !important;
+	--mmDayOtherBackground: var(--tb-base-active) !important;
+	--mmDayOtherBorderColor: none !important;
+	--mmDayTodayBackground: var(--tb-accent-bg) !important;
+	--mmDayTodayColor: var(--tb-base-fg) !important;
+	--mmDayTodayBorderColor: none !important;
+	--mmDayColor: var(--tb-base-fg) !important;
+	--mmDaySelectedBackground: var(--tb-base-hover) !important;
+	--mmDaySelectedBorderColor: none !important;
+	--mmDaySelectedTodayBackground: var(--tb-base-bg) !important;
+	--mmDaySelectedTodayBorderColor: none !important;
+}
+
