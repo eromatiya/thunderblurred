@@ -1,5 +1,10 @@
 
+@import "icons.css";
+
 @import "transparency.css";
 @import "global.css";
-@import "icons.css";
 @import "inbox.css";
+
+
+@import "transparency-addon.css";
+@import "global-addon.css";

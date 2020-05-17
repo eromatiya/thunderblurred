@@ -46,10 +46,4 @@ splitter {
 	border: none !important;
 }
 
-/* Today Panel */
-
-/* #agenda-panel, */
-vbox, sidebarheader {
-	background: transparent !important;
-}
 

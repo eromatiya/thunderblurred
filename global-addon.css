@@ -1,0 +1,36 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+:root {
+	--tb-base-bg: #00000039;
+	--tb-base-fg: #ffffff;
+	--tb-base-hover: #ffffff30;
+	--tb-base-active: #00000068;
+	--tb-accent-bg: #6498EFEE;
+	--tb-secondary-bg: #252525;
+	--tb-radius: 6px;
+}
+
+
+/* Today Panel */
+
+sidebarheader {
+	font-weight: bold !important;
+}
+#agenda-listbox, #agenda-toolbar, #mini-day-box, sidebarheader {
+	-moz-appearance: none !important;
+	background-image: none !important;
+	background-color: var(--tb-base-bg) !important;
+	border: none !important;
+}
+
+.agenda-container-box[selected=true] {
+	background: var(--tb-base-bg) !important;
+}
+
+.agenda-container-box:hover {
+	background: var(--tb-base-hover) !important;
+}
+
+#miniday-dropdown-minimonth {
+/* 	background: transparent !important; */
+}

@@ -1,0 +1,8 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* Today Panel */
+
+/* #agenda-panel, */
+vbox, sidebarheader {
+	background: transparent !important;
+}
