@@ -128,11 +128,18 @@ calendar-event-column {
 
 
 /* Task tree, the panel on the right side of calendar tab */
-.calendar-task-tree {
+.calendar-task-tree, #calendar-task-tree-detail {
 	background-color: transparent !important;
 	border: none !important;
 	color: var(--tb-base-fg) !important;
 	font-weight: normal !important;
 }
 
+
+/* Tasks Tab */
+
+#task-addition-box {
+	background: transparent !important;
+	border: none !important;
+}
 
