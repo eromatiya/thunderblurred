@@ -5,7 +5,7 @@
 
 | ThunderBlurred | Calendar |
 | --- | --- |
-| ![screenshot](images/inbox.png) | ![screenshot](images/calendar.png) |
+| ![screenshot](images/mainwindow.png) | ![screenshot](images/calendar.png) |
 
 
 ## How to
