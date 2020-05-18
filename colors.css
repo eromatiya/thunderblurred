@@ -1,0 +1,10 @@
+:root {
+	--tb-base-bg: #00000039;
+	--tb-base-fg: #ffffff;
+	--tb-base-hover: #00000068;
+	--tb-base-active: #00000068;
+	--tb-accent-bg: #6498EFEE;
+	--tb-secondary-bg: #252525;
+	--tb-radius: 6px;
+}
+ 

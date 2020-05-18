@@ -1,0 +1,145 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* Today Panel */
+
+vbox, sidebarheader {
+	background: transparent !important;
+}
+
+.mail-toolbox {
+	background: transparent !important;
+}
+
+
+
+/* Calendar Pane */
+
+/* Backgrond of Calendar Tab */
+#calendarContent {
+	background: transparent !important;
+}
+
+
+/* Minimonth Panel */
+
+#minimonth-pane, #ltnSidebar {
+	background: transparent !important;
+}
+
+
+/* Main Event and Calendar Panel */
+
+/* This is behind the #unifinder-search-results-tree */
+#calendar-view-box {
+	background:  transparent !important;
+}
+
+#unifinder-search-results-tree {
+	background: transparent !important;
+}
+
+/* Unifinder bar */
+#bottom-events-box #unifinder-searchBox {
+	background:  transparent !important;
+	border: none !important;
+}
+
+#unifinder-search-results-tree-cols treecol {
+	background: transparent !important;
+}
+
+#event-filter-menulist {
+	background: transparent !important;
+	border: none !important;
+}
+
+.navigation-inner-box {
+	border: none !important;
+}
+
+#view-tabs {
+	background: transparent !important;
+	border: none !important;
+}
+
+/* Calendar tabs */
+#view-tabs .calview {
+	background: transparent !important;
+	border: none !important;
+}
+
+.navigation-spacer-box {
+	border: none !important;
+}
+
+.navigation-bottombox {
+	background: transparent !important;
+}
+
+
+
+/* The background of calendar and event  */
+#view-deck {
+	background: transparent !important;
+	border-color: var(--tb-base-bg) !important;
+}
+
+#day-view box calendar-day-label,
+#day-view box calendar-header-container,
+#day-view box calendar-event-column {
+	background: transparent !important;
+	border-color: var(--tb-base-bg) !important;
+}
+
+.topbox box {
+	background: transparent !important;
+}
+
+calendar-event-column {
+  background-color: transparent !important;
+}
+
+
+
+/* WEEK TAB */
+calendar-event-column {
+  background-color: transparent !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Task tree, the panel on the right side of calendar tab */
+.calendar-task-tree, #calendar-task-tree-detail {
+	background-color: transparent !important;
+	border: none !important;
+	color: var(--tb-base-fg) !important;
+	font-weight: normal !important;
+}
+
+
+/* Tasks Tab */
+
+#task-addition-box {
+	background: transparent !important;
+	border: none !important;
+}
+

@@ -1,0 +1,10 @@
+/*Ligntning Addon*/
+
+/*Make the elements transparent*/
+@import "transparency.css";
+
+/*Override the transparent elements*/
+@import "global.css";
+
+
+

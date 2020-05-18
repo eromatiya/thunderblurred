@@ -1,0 +1,49 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+
+/* Add transparency to the majority of the window */
+
+#messengerWindow,
+#messengerBox, #mail-toolbox {
+	background: transparent !important;
+	border: none !important;
+}
+
+/* Folder Tree, leftmost sidebar in inbox */
+#messengerBox #folderTree {
+	background: transparent !important;
+}
+
+/* Thread tree, the one that contains all your email in inbox */
+
+#threadTree {
+	background: transparent !important;
+	border: none !important;
+}
+
+/* Quick filter bar in threadtree */
+
+#messengerBox #messagesBox #quick-filter-bar {
+	background: transparent !important;
+}
+
+
+/* Status bar, the bar at the bottom */
+#status-bar {
+	background: transparent !important;
+}
+
+/* The selected tab background */
+
+.tab-background[selected=true] {
+	background: transparent !important;
+}
+
+
+/* The Splitters */
+splitter {
+	background: transparent !important;
+	border: none !important;
+}
+
+
