@@ -16,7 +16,7 @@ download_tb() {
         cp -r "${TB_THEME}"* "${CHROME_DIRECTORY}"
 
         cat > "${CHROME_DIRECTORY}/../user.js" <<'EOL'
-        user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", false); 
+        user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true); 
         user_pref("layers.acceleration.force-enabled", true);
         user_pref("gfx.webrender.all", true);
         user_pref("gfx.webrender.enabled", true);
