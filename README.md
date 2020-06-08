@@ -15,21 +15,17 @@
 1. Run
   
   ```bash
-  $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/manilarome/thunderblurred/master/install.sh)"
+  $ bash -c "$(curl -fsSL https://raw.githubusercontent.com/manilarome/thunderblurred/master/install.sh)"
   ```
 
-2. After the confirmation message that the theme is successfully installed, open firefox. You'll notice that it is still not transparent. To fix this, **`Open Menu > Customize > Change the theme to Dark`**.
+2. After the confirmation message that the theme is successfully installed, open thunderbird. You'll notice that it is still not transparent. To fix this, **`Open Menu > Customize > Change the theme to Dark`**.
 
-#### NOTE:
+#### NOTE
 
 + It is advisible to check the script first before running it.
-+ You need `bash` to run it.
-+ The script will fail if you have multiple profile directory! Make sure you only have one!
++ The script will fail if you have multiple profile directories! Make sure you only have one!
 + If you have a current chrome folder in your profile directory, the script will make a backup.
 
-#### NOTE:
-
-It is advisible to check the script first before running it.
 
 ### Manual Installation
 
