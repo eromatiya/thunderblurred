@@ -29,6 +29,9 @@
 /*Override transparent elements*/
 @import "global.css";
 
+/*Support for the Thunderbird 115+ (Supernova) UI*/
+@import "modern.css";
+
 /*Override global elements*/
 @import "inbox.css";
 
