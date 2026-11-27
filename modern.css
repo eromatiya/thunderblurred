@@ -1,0 +1,40 @@
+/* Thunderblurred compatibility layer for Thunderbird 115+ (Supernova UI) */
+:root {
+  --layout-background-0: transparent !important;
+  --layout-background-1: transparent !important;
+  --layout-background-2: transparent !important;
+  --layout-background-3: transparent !important;
+  --toolbar-bgcolor: transparent !important;
+  --toolbox-bgcolor: transparent !important;
+  --toolbox-bgcolor-inactive: transparent !important;
+  --sidebar-background-color: transparent !important;
+  --foldertree-background: transparent !important;
+  --tree-view-bg: transparent !important;
+  --tree-pane-background: transparent !important;
+  --spaces-bg-color: transparent !important;
+  --tabs-toolbar-background-color: transparent !important;
+  --lwt-accent-color: transparent !important;
+  --lwt-accent-color-inactive: transparent !important;
+  --lwt-header-image: none !important;
+}
+
+:root, body,
+#messengerBody, #tabmail, #tabmail-container, #tabpanelcontainer,
+#navigation-toolbox, #unifiedToolbar, #unifiedToolbarContainer,
+#toolbar-menubar, #tabs-toolbar, #titlebar, #spacesToolbar,
+#folderPane, #folderTree, #folderPaneHeaderBar,
+#threadPane, #threadTree, #threadTree table, #threadTree tbody,
+#threadPaneHeaderBar, #quick-filter-bar, #messagePane,
+#accountCentral, #multiMessageBrowser, #status-bar,
+#messageHeader, #headerSenderToolbarContainer,
+browser, tree-view, .tab-background {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* single dark tint for the whole window (only the top-level window has this id) */
+#messengerWindow {
+  background: var(--tb-base-bg, #00000039) !important;
+}
+
+#threadTree tr:hover { background-color: var(--tb-base-hover, #00000068) !important; }
